@@ -7,7 +7,6 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.processing.Generated;
 import com.querydsl.core.types.Path;
-import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -20,11 +19,13 @@ public class QUser extends EntityPathBase<User> {
 
     public static final QUser user = new QUser("user");
 
+    public final EnumPath<com.example.springbootboard.constant.Authority> authority = createEnum("authority", com.example.springbootboard.constant.Authority.class);
+
+    public final StringPath email = createString("email");
+
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
     public final StringPath password = createString("password");
-
-    public final ListPath<PortFolio, QPortFolio> portFolios = this.<PortFolio, QPortFolio>createList("portFolios", PortFolio.class, QPortFolio.class, PathInits.DIRECT2);
 
     public final StringPath username = createString("username");
 

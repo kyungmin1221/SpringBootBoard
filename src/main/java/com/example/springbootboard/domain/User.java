@@ -2,16 +2,15 @@ package com.example.springbootboard.domain;
 
 import com.example.springbootboard.constant.Authority;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import org.springframework.security.core.GrantedAuthority;
-
+import lombok.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
+
 
 @Entity
 @Getter
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "users")
 public class User {
@@ -19,6 +18,9 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false, unique = true)
+    private String email;
 
     @Column(nullable = false)
     private String username;
@@ -29,10 +31,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Authority authority;
 
-    @OneToMany(mappedBy = "user")
-    private List<PortFolio> portFolios = new ArrayList<>();
+//    @OneToMany(mappedBy = "user")
+//    private List<PortFolio> portFolios = new ArrayList<>();
 
-
-    public User(String subject, String s, Collection<? extends GrantedAuthority> authorities) {
-    }
 }

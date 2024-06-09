@@ -5,6 +5,19 @@ import lombok.*;
 public class TokenDto {
 
 
+    @Getter
+    @Setter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @Builder
+    public static class tokenRequestDto {
+
+        private String accessToken;
+
+        private String refreshToken;
+
+
+    }
 
     @Getter
     @Setter
