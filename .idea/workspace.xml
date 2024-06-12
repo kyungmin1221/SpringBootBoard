@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04d4e84-4869-4bf4-a0eb-f3b6bd46ff1d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b759710-94ab-4070-a31e-b1fa1dbd36fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b759710-94ab-4070-a31e-b1fa1dbd36fb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/config/RedisCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/repository/PortfolioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/SpringBootBoardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/SpringBootBoardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/controller/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/controller/PortfolioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/domain/PortFolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/domain/PortFolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/dto/PortFolioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/dto/PortFolioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/service/PortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/service/PortfolioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +169,8 @@
       <workItem from="1716861748464" duration="142000" />
       <workItem from="1717915881058" duration="15260000" />
       <workItem from="1717946267440" duration="618000" />
+      <workItem from="1718119575017" duration="213000" />
+      <workItem from="1718195658136" duration="3542000" />
     </task>
     <servers />
   </component>
