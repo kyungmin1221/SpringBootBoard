@@ -21,7 +21,6 @@ public class PortfolioService {
     private final PortfolioRepository portfolioRepository;
     private final UserRepository userRepository;
 
-
     // 생성
     @Transactional
     public PortFolioDto.PortfolioResponseDto createPortfolio(PortFolioDto.PortfolioRequestDto requestDto, Long userId) {
@@ -45,5 +44,6 @@ public class PortfolioService {
                 .map(PortFolioDto.PortfolioResponseDto::new)
                 .collect(Collectors.toList());
     }
+
 
 }
