@@ -38,14 +38,6 @@ public class PortfolioService {
         return new PortFolioDto.PortfolioResponseDto(portFolio);
     }
 
-    // 조회
-    public PortFolioDto.PortfolioResponseDto getPortfolio(Long portfolioId) {
-        PortFolio portFolio = portfolioRepository.findById(portfolioId)
-                .orElseThrow(() -> new IllegalArgumentException("해당하는 포트폴리오를 찾을 수 없다."));
-
-        return new PortFolioDto.PortfolioResponseDto(portFolio);
-    }
-
     @Cacheable(value = "portfolio", key = "'all'")
     public List<PortFolioDto.PortfolioResponseDto> getAllPortfolios() {
         List<PortFolio> portFolios = portfolioRepository.findAll();
