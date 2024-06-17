@@ -1,5 +1,6 @@
 package com.example.springbootboard.dto;
 
+import com.example.springbootboard.constant.Note;
 import com.example.springbootboard.domain.PortFolio;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
@@ -19,6 +20,9 @@ public class PortFolioDto {
         @NotBlank
         private String content;
 
+        @NotBlank
+        private Note note;
+
     }
 
     @Getter
@@ -32,9 +36,12 @@ public class PortFolioDto {
 
         private String content;
 
+        private String note;
+
         public PortfolioResponseDto(PortFolio portFolio) {
             this.title = portFolio.getTitle();
             this.content = portFolio.getContent();
+            this.note = portFolio.getNote().name();
         }
     }
 }

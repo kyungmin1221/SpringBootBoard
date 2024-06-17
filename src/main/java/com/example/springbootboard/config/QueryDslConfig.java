@@ -13,7 +13,7 @@ public class QueryDslConfig {
     private EntityManager em;
 
     @Bean
-    private JPAQueryFactory jpaQueryFactory() {
+    public JPAQueryFactory jpaQueryFactory() {
         return new JPAQueryFactory(em);
     }
 }

@@ -30,6 +30,7 @@ public class PortfolioService {
         PortFolio portFolio = PortFolio.builder()
                 .title(requestDto.getTitle())
                 .content(requestDto.getContent())
+                .note(requestDto.getNote())
                 .user(user)
                 .build();
 

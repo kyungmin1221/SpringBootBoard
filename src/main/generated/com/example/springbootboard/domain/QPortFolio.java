@@ -26,6 +26,8 @@ public class QPortFolio extends EntityPathBase<PortFolio> {
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
+    public final EnumPath<com.example.springbootboard.constant.Note> note = createEnum("note", com.example.springbootboard.constant.Note.class);
+
     public final StringPath title = createString("title");
 
     public final QUser user;

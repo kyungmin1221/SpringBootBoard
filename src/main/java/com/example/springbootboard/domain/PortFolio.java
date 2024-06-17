@@ -1,5 +1,6 @@
 package com.example.springbootboard.domain;
 
+import com.example.springbootboard.constant.Note;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,6 +21,10 @@ public class PortFolio {
 
     @Column(nullable = false)
     private String content;
+
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Note note;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
