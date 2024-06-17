@@ -1,7 +1,11 @@
 package com.example.springbootboard.repository.query;
 
-import org.springframework.stereotype.Repository;
+import com.example.springbootboard.constant.Note;
+import com.example.springbootboard.dto.PortFolioDto;
 
-@Repository
+import java.util.List;
+
+
 public interface PortfolioRepositoryCustom {
+    List<PortFolioDto.PortfolioResponseDto> getUserPortfolio(Note note);
 }

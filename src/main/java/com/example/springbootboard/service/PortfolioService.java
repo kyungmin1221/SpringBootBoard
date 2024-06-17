@@ -1,5 +1,6 @@
 package com.example.springbootboard.service;
 
+import com.example.springbootboard.constant.Note;
 import com.example.springbootboard.domain.PortFolio;
 import com.example.springbootboard.domain.User;
 import com.example.springbootboard.dto.PortFolioDto;
@@ -46,5 +47,9 @@ public class PortfolioService {
                 .collect(Collectors.toList());
     }
 
+    // 포트폴리오 종류로 동적 필터링
+    public List<PortFolioDto.PortfolioResponseDto> getUserPortfolio(Note note) {
+        return portfolioRepository.getUserPortfolio(note);
+    }
 
 }

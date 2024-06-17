@@ -1,6 +1,7 @@
 package com.example.springbootboard.controller;
 
 
+import com.example.springbootboard.constant.Note;
 import com.example.springbootboard.domain.PortFolio;
 import com.example.springbootboard.domain.User;
 import com.example.springbootboard.dto.PortFolioDto;
@@ -33,5 +34,11 @@ public class PortfolioController {
     public ResponseEntity<List<PortFolioDto.PortfolioResponseDto>> getAllPortfolios() {
         List<PortFolioDto.PortfolioResponseDto> responseDtos = portfolioService.getAllPortfolios();
         return ResponseEntity.ok(responseDtos);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<PortFolioDto.PortfolioResponseDto>> getUserPortfolio(@RequestParam Note note)  {
+        List<PortFolioDto.PortfolioResponseDto> results = portfolioService.getUserPortfolio(note);
+        return ResponseEntity.ok(results);
     }
 }
