@@ -1,6 +1,7 @@
 package com.example.springbootboard.dto;
 
 import com.example.springbootboard.domain.PortFolio;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 public class PortFolioDto {
@@ -12,8 +13,10 @@ public class PortFolioDto {
     @Builder
     public static class PortfolioRequestDto {
 
+        @NotBlank
         private String title;
 
+        @NotBlank
         private String content;
 
     }

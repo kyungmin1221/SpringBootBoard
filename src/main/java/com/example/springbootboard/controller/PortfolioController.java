@@ -5,6 +5,7 @@ import com.example.springbootboard.domain.PortFolio;
 import com.example.springbootboard.domain.User;
 import com.example.springbootboard.dto.PortFolioDto;
 import com.example.springbootboard.service.PortfolioService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +22,7 @@ public class PortfolioController {
 
     @PostMapping
     public ResponseEntity<PortFolioDto.PortfolioResponseDto> createPortfolio(
-            @RequestBody PortFolioDto.PortfolioRequestDto requestDto,
+            @RequestBody @Valid PortFolioDto.PortfolioRequestDto requestDto,
             @RequestParam Long userId) {
 
         PortFolioDto.PortfolioResponseDto responseDto = portfolioService.createPortfolio(requestDto, userId);
