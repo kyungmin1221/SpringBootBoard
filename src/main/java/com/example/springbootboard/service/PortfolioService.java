@@ -52,4 +52,11 @@ public class PortfolioService {
         return portfolioRepository.getUserPortfolio(note);
     }
 
+    // 포폴 삭제
+    @Transactional
+    public PortFolioDto.PortfolioDeleteDto deletePortfolio(Long portfolioId) {
+        portfolioRepository.deleteById(portfolioId);
+        return new PortFolioDto.PortfolioDeleteDto("포트폴리오가 삭제되었습니다");
+    }
+
 }

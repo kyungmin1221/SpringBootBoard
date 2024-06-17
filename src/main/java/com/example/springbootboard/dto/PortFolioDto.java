@@ -44,4 +44,15 @@ public class PortFolioDto {
             this.note = portFolio.getNote().name();
         }
     }
+
+    @Getter
+    @Setter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @Builder
+    public static class PortfolioDeleteDto {
+
+        private String message;
+
+    }
 }
