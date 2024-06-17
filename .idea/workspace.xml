@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d04d4e84-4869-4bf4-a0eb-f3b6bd46ff1d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/repository/query/PortfolioRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/repository/query/PortfolioRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/service/PortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootboard/service/PortfolioService.java" afterDir="false" />
-    </list>
+    <list default="true" id="d04d4e84-4869-4bf4-a0eb-f3b6bd46ff1d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +239,7 @@
       <workItem from="1718119575017" duration="213000" />
       <workItem from="1718195658136" duration="11085000" />
       <workItem from="1718605433103" duration="5092000" />
-      <workItem from="1718614043112" duration="374000" />
+      <workItem from="1718614043112" duration="573000" />
     </task>
     <servers />
   </component>
