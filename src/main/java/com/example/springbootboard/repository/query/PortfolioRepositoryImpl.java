@@ -25,7 +25,7 @@ public class PortfolioRepositoryImpl implements PortfolioRepositoryCustom {
                 .select(Projections.bean(PortFolioDto.PortfolioResponseDto.class,
                         portFolio.title.as("title"),
                         portFolio.content.as("content"),
-                        portFolio.note.as("note"))
+                        portFolio.note.stringValue().as("note"))
                 )
                 .from(portFolio)
                 .where(noteEq(note))

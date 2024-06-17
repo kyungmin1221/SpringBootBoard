@@ -3,6 +3,7 @@ package com.example.springbootboard.dto;
 import com.example.springbootboard.constant.Note;
 import com.example.springbootboard.domain.PortFolio;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 public class PortFolioDto {
@@ -20,7 +21,7 @@ public class PortFolioDto {
         @NotBlank
         private String content;
 
-        @NotBlank
+        @NotNull
         private Note note;
 
     }

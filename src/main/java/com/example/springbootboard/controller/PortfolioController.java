@@ -34,7 +34,7 @@ public class PortfolioController {
         return ResponseEntity.ok(responseDtos);
     }
 
-    @GetMapping
+    @GetMapping("/note")
     public ResponseEntity<List<PortFolioDto.PortfolioResponseDto>> getUserPortfolio(@RequestParam Note note)  {
         List<PortFolioDto.PortfolioResponseDto> results = portfolioService.getUserPortfolio(note);
         return ResponseEntity.ok(results);
