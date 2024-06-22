@@ -1038,8 +1038,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="302" parent="1" name="pofol">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-06-18.05:43:29</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-06-17.11:43:29</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2024-06-18.05:57:22</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-06-17.11:57:22</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="303" parent="1" name="mysql.infoschema">
